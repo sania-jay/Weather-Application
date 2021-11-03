@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Weather App</title>
+</head>
+
+<body class="background">
+   <div class="container">
+     <div class="weather-app" id="weather-app">
+       <div class="row row1">
+           <div class="col-sm-11">
+<form id="search-city">
+  <a href="#" class="current-location">
+    <img src="src/images/my-location-icon-4.jpeg" alt="current-Location-Icon" id="current-location">
+  </a>
+    <input type="search" placeholder="type a city..." class="searchInput" autocomplete="off"/> 
+    <input type="submit" value="Search" class="btn btn-primary"/>
+  
+</form>
+
+           </div>
+           <div class="row2">
+               <div class="col-sm-12 current-col">
+                 <div class="row">
+                    <div class="col-sm-6 current-col1">
+                      <div class= "clearfix">
+                       <h2>
+                         <span id="currentCity"></span>, <span id="country"></span> 
+                       </h2>
+                       <img src="" 
+                       alt="cloud-image" id="icon"
+                       class="weather-icon float-left"/>
+                    
+                       <span class="currentTemp" id= "tempNow"> 
+                      </span>
+                        <span class="units">
+                          °C
+                        </span>
+                      
+                      </div>
+                      
+                         <ul>   
+                        <li>
+                            <strong><span class="currentWeatherDescription" id="description">Mostly Cloudy</span></strong>
+                        </li>
+                        <li>
+                            <strong>H:</strong><span class="currentHigh">°C</span> | <strong>L:</strong><span class="currentLow">°C</span>
+                        </li>
+                    <li class="current" id="time" >
+                            Current Date and Time!
+                        </li>
+                      </ul>   
+                </div>
+                
+              
+  
+               <div class="col-sm-5 current-col2">
+             
+                
+                 <div class="row justify-content-md-center">
+  
+                   <div class="col-sm-3 col1">
+                            Humidity
+                   </div>
+                   <div class="col col2">
+                            <span class="humidity">86</span>%
+                   </div>
+                   </div>
+                   <div class="row">
+                   <div class="col-sm-3 col1">
+                            Wind 
+                   </div>
+                   <div class="col col2">
+                            s <span class="wind">9</span> mph
+                   </div>
+                   </div>
+                   <div class="row">
+                   <div class="col-3 col1 feelsLike text-nowrap">
+                            Feels like
+                   </div>
+                   <div class="col col2">
+                            <span class="feelsLikeTemp">20</span>°C
+                   </div>
+                   </div>
+                   
+                  
+                   <div class="row">
+                   <div class="col-sm-3 col1">
+                            Pressure
+                   </div>
+                   <div class="col col2">
+                            <span class="pressure">1010</span> hPa
+                   </div>
+                   </div>
+                   <div class="row">
+                   <div class="col-sm-3 col1">
+                            Visibility
+                   </div>
+                   <div class="col col2">
+                            <span class="visibility">0</span>km
+                   </div>
+                   </div>
+                  </div>
+                  </div>
+                </div>    
+</div>
+</div>
+</div> 
+             <div class="container forecast-container">
+                <div class="weather-forecast" id="forecast">
+                
+              </div>      
+           </div>                                      
+   
+   <p class="owner">
+    <small>
+      <a href="https://github.com/sania-jay/weather-application.git" target="_blank"">Coded</a> by Sania Javed
+    </small>
+   </p>
+   
+<script src="src/app.js">
+
+</script>
+</div>
+  </body>
+</html>
